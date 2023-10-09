@@ -14,6 +14,7 @@ struct Node {
 
 class Chess {
 public:
+    Chess(){}
     Chess(int rows, int cols) : rows_(rows), cols_(cols), head_(nullptr) {
         // Create the 2D linked board with all values initialized to 0
         initBoard();
@@ -257,6 +258,13 @@ public:
         }
             return false;
     }
+
+    void resetGame(Chess*& board){
+        delete board;
+        board = new Chess(9,9);
+        cout<<endl<<"Restarting Game!..."<<endl;
+        Sleep(2000);
+    }
 private:
     int rows_;
     int cols_;
@@ -299,16 +307,20 @@ private:
 int main() {
     // Create a 2D linked board with 3 rows and 4 columns
     char move[10]={' '};
-    Chess board(9, 9);
+    Chess *board = new Chess(9,9);
+    Sleep(2000);
     chessAnimation();
     loading();
     cout<<"Game has Started!\n"<<endl;
     while(move[0]!='q'){
         // Display the 2D linked board
-        board.display();
+        board->display();
         cout << "\nEnter Move: ";
         cin.getline(move, sizeof(move));
-        board.readMove(move);
+        if(move[0]=='r'){
+            board->resetGame(board);
+        }
+        board->readMove(move);
         system("cls");
     }
     quitting();
