@@ -84,6 +84,11 @@ public:
         int tcol = (move[6] - 'a') + 1;
         int trow = 8 - (move[7] - '0');
 
+        if(move[0] =='q'){
+            cout<<"Quiting Game!"<<endl;
+            return;
+        }
+
         if (isValidMove(frow, fcol, trow, tcol)) {
             makeMove(frow, fcol, trow, tcol);
         } else {
@@ -203,11 +208,12 @@ int main() {
     char movearr[10];
     chess chess;
     cout << "Game has started!" << endl;
-    while (1) {
+    while (movearr[0]!='q') {
         chess.display();
         cout << "Enter Move: ";
         cin.getline(movearr, sizeof(movearr));
         chess.readMove(movearr);
+        system("clear");
     }
     return 0;
 }
