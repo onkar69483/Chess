@@ -60,10 +60,14 @@ Contributions are welcome! If you'd like to contribute to the project, please fo
 
 ## Acknowledgments
 
-- Thanks to [Your Name] for their contributions and feedback.
+[Onkar Mendhapurkar](https://github.com/onkar69483)
+
+[Sachin Mhetre](https://github.com/Sachin-Mhetre)
+
+[Ritvik Reddy](https://github.com/Silenwolf02)
 
 ## Contact
 
-If you have any questions or suggestions, please feel free to contact [Onkar Mendhapurkar] at [onkar69483@gmail.com].
+If you have any questions or suggestions, please feel free to contact [Onkar Mendhapurkar](https://github.com/onkar69483) at [onkar69483@gmail.com](onkar69483@gmail.com).
 
 Enjoy the game!
