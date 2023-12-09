@@ -1,3 +1,6 @@
+/*
+Chess Game using Linked List
+*/
 #include <iostream>
 #include <Windows.h>
 #include "animation.h"
