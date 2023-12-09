@@ -1,5 +1,5 @@
 /*
-Chess Game using Linked List
+Terminal Based Chess Game using Linked List
 */
 #include <iostream>
 #include <Windows.h>
