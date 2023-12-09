@@ -1,5 +1,5 @@
 /*
-Chess game Using Arrays
+Terminal Based Chess game Using Arrays
 */
 
 #include <iostream>
