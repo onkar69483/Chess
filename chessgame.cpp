@@ -1,4 +1,4 @@
-*/
+/*
 Chess game Using Arrays
 */
 
