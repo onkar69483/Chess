@@ -1,3 +1,7 @@
+*/
+Chess game Using Arrays
+*/
+
 #include <iostream>
 #include <cstdlib>
 using namespace std;
